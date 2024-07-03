@@ -119,6 +119,7 @@ for (let i = 0; i < filterBtn.length; i++) {
 const form = document.querySelector("[data-form]");
 const formInputs = document.querySelectorAll("[data-form-input]");
 const formBtn = document.querySelector("[data-form-btn]");
+const myformbtn=document.querySelector(".form-btn")
 
 // add event to all form input field
 for (let i = 0; i < formInputs.length; i++) {
@@ -126,9 +127,9 @@ for (let i = 0; i < formInputs.length; i++) {
 
     // check form validation
     if (form.checkValidity()) {
-      formBtn.removeAttribute("disabled");
+      myformbtn.removeAttribute("disabled");
     } else {
-      formBtn.setAttribute("disabled", "");
+      myformbtn.setAttribute("disabled", "");
     }
 
   });
